@@ -2,20 +2,13 @@
 
 {% macro render_field(field) %}
 <div class="form-group">
-<<<<<<< HEAD
-	<label for={{field.name }} >{{ field.label }}</label>
-		{{ field(class="form-control") }}
-</div>
-{% endmacro%}
-
-=======
 	{% if field.name != "submit" %}
 	{{ field.label }}
 	{% endif %}
 	{{ field(class="form-control") }}
 </div>
 {% endmacro %}
->>>>>>> e1feb23c3c8f878fe304416a049bb1d15ff2964e
+
 
 
 
@@ -23,14 +16,10 @@
 
 <div class="container">
 	<div class="row">
-<<<<<<< HEAD
+
 
 		<div class="col-sm-12">
 			<legend>Apply Now</legend>
-=======
-		<div class="col-sm-12">
-			<legend>Job Application</legend>
->>>>>>> e1feb23c3c8f878fe304416a049bb1d15ff2964e
 			<form method="POST" action="{{ url_for('apply') }}">
 				{{ form.csrf_token }}
 				{{ render_field(form.first_name) }}
@@ -38,21 +27,7 @@
 				{{ render_field(form.email) }}
 				{{ render_field(form.resume) }}
 
-<<<<<<< HEAD
-				{{ form.submit() }}
-			</form>
 
-		</div>
-
-
-
-
-	</div>
-
-</div>
-
-
-=======
 
 				{{ render_field(form.submit)}}
 			</form>
@@ -64,5 +39,4 @@
 
 
 
->>>>>>> e1feb23c3c8f878fe304416a049bb1d15ff2964e
 {% endblock %}

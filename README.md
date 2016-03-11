@@ -1,6 +1,6 @@
 # job_box
-
-A web app for users to submit job application form + resume
+Source for programming tutorial video series I am putting together.
+The tutorial follows the creation of a job box web application.
 
 Uses:
 * Flask

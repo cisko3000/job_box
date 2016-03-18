@@ -20,7 +20,7 @@
 
 		<div class="col-sm-12">
 			<legend>Apply Now</legend>
-			<form method="POST" action="{{ url_for('apply') }}">
+			<form method="POST"  enctype="multipart/form-data" action="{{ url_for('apply') }}">
 				{{ form.csrf_token }}
 				{{ render_field(form.first_name) }}
 				{{ render_field(form.last_name) }}
